@@ -1,146 +1,18 @@
-# Hugo Version Configuration
-hugoVersion:
-    extended: true
-    min: "0.87.0"
+# Change baseurl before deploy
+baseurl = "https://demo.stack.jimmycai.com"
+languageCode = "en-us"
+title = "Hugo Theme Stack Starter"
 
-# Parameters for the website
-[params]
-    mainSections = ["post"]
-    featuredImageField = "image"
-    rssFullContent = true
-    favicon = ""
+# Theme i18n support
+# Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
+defaultContentLanguage = "en"
 
-    [params.footer]
-    since = ""
-    customText = ""
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage = false
 
-    [params.dateFormat]
-    published = "Jan 02, 2006"
-    lastUpdated = "Jan 02, 2006 15:04 MST"
+# Change it to your Disqus shortname before using
+disqusShortname = "hugo-theme-stack"
 
-    [params.sidebar]
-    compact = false
-    emoji = ""
-    subtitle = ""
-    [params.sidebar.avatar]
-    enabled = true
-    local = true
-    src = "img/avatar.png"
-
-    [params.article]
-    headingAnchor = false
-    math = false
-    toc = true
-    readingTime = true
-    [params.article.license]
-    enabled = false
-    default = "Licensed under CC BY-NC-SA 4.0"
-
-    [params.comments]
-    enabled = false
-    provider = "disqus"
-
-    [params.comments.disqusjs]
-    shortname = ""
-    apiUrl = ""
-    apiKey = ""
-    admin = ""
-    adminLabel = ""
-
-    [params.comments.utterances]
-    repo = ""
-    issueTerm = "pathname"
-    label = ""
-
-    [params.comments.beaudar]
-    repo = ""
-    issueTerm = "pathname"
-    label = ""
-    theme = ""
-
-    [params.comments.remark42]
-    host = ""
-    site = ""
-    locale = ""
-
-    [params.comments.vssue]
-    platform = ""
-    owner = ""
-    repo = ""
-    clientId = ""
-    clientSecret = ""
-    autoCreateIssue = false
-
-    [params.comments.waline]
-    serverURL = ""
-    lang = ""
-    visitor = ""
-    avatar = ""
-    emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
-    [params.comments.waline.requiredMeta]
-    nick = ""
-    mail = ""
-    [params.comments.waline.locale]
-    admin = "Admin"
-    placeholder = ""
-
-    [params.comments.twikoo]
-    envId = ""
-    region = ""
-    path = ""
-    lang = ""
-
-    [params.comments.giscus]
-    repo = ""
-    repoID = ""
-    category = ""
-    categoryID = ""
-    mapping = ""
-    strict = false
-    lightTheme = ""
-    darkTheme = ""
-    reactionsEnabled = 1
-    emitMetadata = 0
-    inputPosition = ""
-    lang = ""
-
-    [params.comments.gitalk]
-    owner = ""
-    admin = ""
-    repo = ""
-    clientID = ""
-    clientSecret = ""
-
-    [params.comments.cusdis]
-    host = ""
-    id = ""
-
-# Widgets Configuration
-[params.widgets]
-    homepage = []
-    page = []
-
-# OpenGraph Configuration
-[params.opengraph]
-    [params.opengraph.twitter]
-    site = ""
-    card = "summary_large_image"
-
-# Default OpenGraph Image
-[params.defaultImage]
-    [params.defaultImage.opengraph]
-    enabled = false
-    local = false
-    src = ""
-
-# Color Scheme Configuration
-[params.colorScheme]
-    toggle = true
-    default = "auto"
-
-# Image Processing Configuration
-[params.imageProcessing]
-    [params.imageProcessing.cover]
-    enabled = true
-    [params.imageProcessing.content]
-    enabled = true
+[pagination]
+pagerSize = 5
